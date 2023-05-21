@@ -22,10 +22,10 @@ function isLetter(char) {
   return false;
 }
 
-function repeatCharacter(string, character, times) {
+function repeatCharacter(string='', character, numRepeats) {
   let result = string;
-  for (let i = 0; i < times; i++) {
-    result += character;
+  for (let i = 0; i < numRepeats; i++) {
+    result =result + character;
   }
   return result;
 }
@@ -51,5 +51,5 @@ function uncompress(s) {
 
 
 module.exports = {
-  uncompress,
+  uncompress, isLetter, repeatCharacter
 };
